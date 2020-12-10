@@ -1,0 +1,14 @@
+.post-list-item {
+    height: 25px;
+    background-color:white;
+    border-radius: 9px;
+}
+.important {
+    color: rgb(255, 255, 37);
+}
+.like {
+    color: red;
+}
+.trash {
+    color: white;
+}
