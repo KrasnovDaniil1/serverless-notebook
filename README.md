@@ -8,4 +8,4 @@
 - отмечать пост который понравился
 - искать пост среди всех постов 
 - искать пост только среди понравившихся.
-<img src="serverless-notebook.gif" />
+<img src="serverless-notebook.gif" width="80%" height="80%"  />
