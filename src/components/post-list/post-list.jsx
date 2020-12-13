@@ -3,7 +3,9 @@ import PostListItem from '../post-list-item';
 
 
 class PostList extends Component {
+
     render() {
+
         const {posts , onDelete , onToggleImportant , onToggleLiked } = this.props;
         const elements = posts.map((item) => {
             return (
@@ -11,19 +13,22 @@ class PostList extends Component {
                     <PostListItem 
                     label={item.label} 
                     important={item.important} 
-                    onDelete={() => onDelete(item.id)} />
+                    like={item.like}
+                    onDelete={() => onDelete(item.id)} 
+                    onToggleImportant={() => onToggleImportant(item.id)} 
+                    onToggleLiked={() => onToggleLiked(item.id)}
+                    />
                 </li>
                 
             )
         });
 
-    return (
-        <ul className="post-list list-group my-3">
-       {elements}
-        </ul>
-    )
-}
+        return (
+            <ul className="post-list list-group my-3">
+            {elements}
+            </ul>
+        )
+    }
     }
 
-    
 export default PostList;
